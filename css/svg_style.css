@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* VARIABLES - START */
+/* COLORS */
+/* DIMENSIONS */
+/* FONTS */
+/* VARIABLES - END */
+/* COMMONS - START */
+ .flex-center, .wrapper {
+	 display: flex;
+     flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 height: 100vh;
+}
+ * {
+	 box-sizing: border-box;
+	 margin: 0;
+	 font-family: "Lato", sans-serif;
+}
+/* COMMONS - END */
+/* STYLES - START */
+ .wrapper {
+	 background-color: #fafbff;
+}
+ .wrapper .button {
+	 height: 75px;
+	 width: 300px;
+	 border-radius: 2px;
+	 background-color: green;
+	 transition: all 0.1s linear;
+	 position: relative;
+	 cursor: pointer;
+     margin-top: 60px;
+}
+ .wrapper .button:hover {
+	 transform: scale(1.05);
+	 box-shadow: 10px 10px 20px rgb(0, 102, 0, 0.5);
+}
+ .wrapper .button:hover .icon-message #bubble {
+	 transform: scale(1.25);
+}
+ .wrapper .button:hover .icon-message #pencil {
+	 transform: scale(0.7) translateY(-25px) translateX(-45px);
+	 animation: animate-pencil 0.5s 0.2s alternate infinite linear;
+}
+ .wrapper .button:hover .icon-message .text {
+	 font-size: 20px;
+}
+ .wrapper .button .icon-message {
+	 height: 75px;
+	 width: 75px;
+	 position: absolute;
+	 top: 15px;
+	 left: 25px;
+}
+ .wrapper .button .icon-message .pencil {
+	 position: relative;
+	 top: -65px;
+	 left: 40px;
+	 z-index: 10;
+}
+ .wrapper .button .text {
+	 color: #fafbff;
+	 position: absolute;
+	 top: 50%;
+	 right: 30px;
+	 transform: translateY(-50%);
+	 font-size: 18px;
+}
+ #bubble path {
+	 fill: none;
+	 stroke: #fafbff;
+	 stroke-width: 2px;
+}
+ #pencil {
+	 transition: transform 0.1s linear;
+}
+ #pencil path {
+	 fill: green;
+	 stroke: #fafbff;
+	 stroke-width: 4px;
+}
+/* STYLES - END */
+/* ANIMATIONS - START */
+ @keyframes animate-pencil {
+	 100% {
+		 transform: scale(0.7) translateX(-20px) translateY(-25px);
+	}
+}
+/* ANIMATIONS - END */
+ 
