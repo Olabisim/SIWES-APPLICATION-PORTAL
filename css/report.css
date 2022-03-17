@@ -1,0 +1,259 @@
+:root {
+    --border: #483b55;
+    --bg: #fff;
+    --duration: 0.7s;
+}
+.button {
+    display: inline-block;
+    padding: 4vh 6vh;
+    font-size: 4vh;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 1vh;
+    box-shadow: 0 1vh #999;
+}
+.button:active {
+    box-shadow: 0 0.5vh #666;
+    transform: translateY(0.3vh);
+}
+#start {
+    top: 70vh;
+    left: 105vh;
+}
+#start .button {
+    background-color: #ee9849;
+}
+#start .button:hover, #start .button:active {
+    background-color: #e58638;
+}
+#skip {
+    top: 5vh;
+    left: 125vh;
+}
+#skip .button {
+    background-color: #2a4e96;
+}
+#skip .button:hover, #skip .button:active {
+    background-color: #1e3d70;
+}
+#lets {
+    top: 8vh;
+    left: 105vh;
+}
+#formalities {
+    top: 25vh;
+    left: 115vh;
+    width: 100vh;
+}
+#text {
+    top: 40vh;
+    left: 105vh;
+    width: 100vh;
+}
+#animation {
+    position: relative;
+    left: 0vh;
+}
+#animation div {
+    position: absolute;
+    display: none;
+}
+#animation svg {
+    height: 100vmin;
+    width: 100vmin;
+}
+/* Scene 1 */
+#woman.scene-1 {
+    animation: woman-scene-1 var(--duration) ease-in;
+}
+#man.scene-1 {
+    animation: man-scene-1 var(--duration) ease-in;
+}
+#skip.scene-1 {
+    animation: opacity var(--duration) ease-in;
+}
+#bg.scene-1 {
+    animation: opacity var(--duration) ease-in;
+}
+#lets.scene-1 {
+    animation: opacity var(--duration) ease-in;
+}
+/* Scene 2 */
+#woman-arm.scene-2 {
+    animation: woman-scene-2 var(--duration) infinite ease-in;
+}
+#man-arm.scene-2 {
+    animation: man-scene-2 var(--duration) infinite ease-in;
+}
+#formalities.scene-2 {
+    animation: opacity var(--duration) ease-in;
+}
+/* Scene 3 */
+#woman.scene-3 {
+    animation: woman-scene-3 var(--duration) ease-in;
+}
+#man.scene-3 {
+    animation: man-scene-3 var(--duration) ease-in;
+}
+#text.scene-3 {
+    animation: opacity var(--duration) ease-in;
+}
+/* Scene 4 */
+#woman.scene-4 {
+    top: 1vh;
+    left: 9vh;
+    animation: woman-scene-4 var(--duration) infinite ease-in;
+}
+#man.scene-4 {
+    top: 1vh;
+    left: -9vh;
+    animation: man-scene-4 var(--duration) infinite ease-in;
+}
+#start.scene-4 {
+    animation: opacity var(--duration) ease-in;
+}
+#hearts.scene-4 {
+    animation: hearts-scene-4 1.4s infinite ease-in;
+}
+@keyframes woman-scene-1 {
+    from {
+        transform: translateX(-20vh);
+        opacity: 0;
+   }
+    to {
+        transform: translateX(0vh);
+        opacity: 1;
+   }
+}
+@keyframes man-scene-1 {
+    from {
+        transform: translateX(20vh);
+        opacity: 0;
+   }
+    to {
+        transform: translateX(0vh);
+        opacity: 1;
+   }
+}
+@keyframes woman-scene-2 {
+    4% {
+        transform: rotate(-5deg) translateX(1vh) translateY(-2vh);
+   }
+    16% {
+        transform: rotate(-10deg) translateX(1.5vh) translateY(-4vh);
+   }
+    44% {
+        transform: rotate(-15deg) translateX(2.5vh) translateY(-6vh);
+   }
+    68% {
+        transform: rotate(-15deg) translateX(2.5vh) translateY(-6vh);
+   }
+    80% {
+        transform: rotate(-10deg) translateX(1.5vh) translateY(-4vh);
+   }
+    100% {
+        transform: rotate(-5deg) translateX(1vh) translateY(-2vh);
+   }
+}
+@keyframes man-scene-2 {
+    4% {
+        transform: rotate(5deg) translateX(-1vh) translateY(-0.7vh);
+   }
+    16% {
+        transform: rotate(10deg) translateX(-1.5vh) translateY(-1.6vh);
+   }
+    44% {
+        transform: rotate(15deg) translateX(-2.5vh) translateY(-2.8vh);
+   }
+    68% {
+        transform: rotate(15deg) translateX(-2.5vh) translateY(-2.8vh);
+   }
+    80% {
+        transform: rotate(10deg) translateX(-1.5vh) translateY(-1.6vh);
+   }
+    100% {
+        transform: rotate(5deg) translateX(-1vh) translateY(-0.7vh);
+   }
+}
+@keyframes woman-scene-3 {
+    from {
+        transform: translateX(0vh);
+   }
+    to {
+        transform: translateX(9vh);
+   }
+}
+@keyframes man-scene-3 {
+    from {
+        transform: translateX(0vh);
+   }
+    to {
+        transform: translateX(-9vh);
+   }
+}
+@keyframes woman-scene-4 {
+    4% {
+        transform: rotate(2deg);
+   }
+    16% {
+        transform: rotate(-2deg) translateY(-1vh);
+   }
+    44% {
+        transform: rotate(-2deg) translateY(-1vh);
+   }
+    68% {
+        transform: rotate(-2deg) translateY(-1vh);
+   }
+    80% {
+        transform: rotate(2deg) translateY(-1vh);
+   }
+    100% {
+        transform: rotate(2deg);
+   }
+}
+@keyframes man-scene-4 {
+    4% {
+        transform: rotate(2deg);
+   }
+    16% {
+        transform: rotate(2deg) translateY(-1vh);
+   }
+    44% {
+        transform: rotate(-2deg) translateY(0vh);
+   }
+    68% {
+        transform: rotate(-2deg) translateY(0vh);
+   }
+    80% {
+        transform: rotate(-2deg) translateY(0vh);
+   }
+    100% {
+        transform: rotate(2deg);
+   }
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+   }
+    to {
+        opacity: 1;
+   }
+}
+@keyframes hearts-scene-4 {
+    0% {
+        transform: translateY(0vh) scale(0.9);
+        opacity: 0.2;
+   }
+    50% {
+        transform: translateY(-4vh) scale(1.1);
+        opacity: 0.6;
+   }
+    100% {
+        transform: translateY(0vh) scale(0.9);
+        opacity: 0.2;
+   }
+}
