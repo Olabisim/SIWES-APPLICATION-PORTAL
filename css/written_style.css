@@ -1,0 +1,71 @@
+/* html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+html *, html *:before, html *:after {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #004d00;
+} */
+.icon {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 20px;
+    display: block;
+}
+.icon svg {
+    width: 100%;
+}
+.icon path {
+    fill: transparent;
+    stroke: green;
+    stroke-width: 1;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 0;
+    animation: reveal 6s infinite linear both;
+}
+.font {
+    position: absolute;
+    bottom: 30px;
+    margin: 0 20px;
+    color: green;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.font__link {
+    color:green;
+    text-decoration: none;
+}
+@keyframes reveal {
+    0% {
+        fill: green;
+        stroke-dashoffset: 0;
+   }
+    20% {
+        fill: transparent;
+        stroke-dashoffset: 0;
+   }
+    50% {
+        fill: transparent;
+        stroke-dashoffset: 450;
+   }
+    80% {
+        fill: transparent;
+        stroke-dashoffset: 900;
+   }
+    90% {
+        fill: green;
+        stroke-dashoffset: 900;
+   }
+    100% {
+        fill: green;
+        stroke-dashoffset: 900;
+   }
+}
