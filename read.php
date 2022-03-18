@@ -45,10 +45,10 @@
 
 <body translate="no" >
 
-  <img src="img/logo.png" alt="">
+  <img src="img/Lasu_logo.PNG" alt="lasu logo">
   <h1><span>
       <!-- &lt; -->
-    </span>EkoUNIMED'S<span>
+    </span>LASU SIWES REPORT<span>
         <!-- &gt; -->
     </span> <span class="yellow">Report</span></h1>
 

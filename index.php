@@ -33,22 +33,23 @@
 
 
         <a href="middle_index.php">
+
         <div class="button">
             <div class="icon-message">
-            <span class="bubble">
-                <svg id="bubble" viewBox="0 0 70 70">
-                <path d="M 20 15 L 20 30 L 30 30 L 30 35 L 35 30 L 50 30 L 50 15 Z" />
+                <span class="bubble">
+                    <svg id="bubble" viewBox="0 0 70 70">
+                    <path d="M 20 15 L 20 30 L 30 30 L 30 35 L 35 30 L 50 30 L 50 15 Z" />
 
-                </svg>
-                <span class="pencil">
-                <svg id="pencil" viewBox="0 0 145 145">
-                    <path transform="rotate(-10 45 110)" d="M 22.5 15 L 30 20 L 40 45 C 45 50 30 55 30 50 L 20 25 Z">
-                </svg></span>
-            </span>
-
+                    </svg>
+                    <span class="pencil">
+                    <svg id="pencil" viewBox="0 0 145 145">
+                        <path transform="rotate(-10 45 110)" d="M 22.5 15 L 30 20 L 40 45 C 45 50 30 55 30 50 L 20 25 Z">
+                    </svg></span>
+                </span>
             </div>
             <div class="text">INPUT A REPORT</div>
         </div>
+
         </a>
     </div>
 

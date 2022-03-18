@@ -34,7 +34,7 @@
 }
  .wrapper .button:hover {
 	 transform: scale(1.05);
-	 box-shadow: 10px 10px 20px rgb(0, 102, 0, 0.5);
+	 box-shadow: 10px 10px 20px rgb(45, 62, 80, 0.5);
 }
  .wrapper .button:hover .icon-message #bubble {
 	 transform: scale(1.25);

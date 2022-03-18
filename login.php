@@ -13,7 +13,7 @@
 
     <div class="wrapper">
         <div class="container">
-            <h1>EkoUNIMED</h1>
+            <h1>LASU </h1>
             
             <form method="post" action="main_login.php" class="form">
                 <input type="text" name="uname" placeholder="Username">
