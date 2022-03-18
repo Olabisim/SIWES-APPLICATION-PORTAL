@@ -26,7 +26,7 @@
 	 height: 75px;
 	 width: 300px;
 	 border-radius: 2px;
-	 background-color: green;
+	 background-color: rgba(45, 62, 80);
 	 transition: all 0.1s linear;
 	 position: relative;
 	 cursor: pointer;
@@ -76,7 +76,7 @@
 	 transition: transform 0.1s linear;
 }
  #pencil path {
-	 fill: green;
+	 fill: rgba(45, 62, 80);
 	 stroke: #fafbff;
 	 stroke-width: 4px;
 }

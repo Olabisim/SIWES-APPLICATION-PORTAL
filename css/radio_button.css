@@ -38,7 +38,7 @@
 
 .checkbox-tools:checked + label {
   background-color: white;
-  border: 1px solid #00b300;
+  border: 1px solid rgba(45, 62, 80);
   /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
@@ -79,7 +79,7 @@ input[type='radio']:checked:after {
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #00b300 !important;
+    background-color: rgba(45, 62, 80) !important;
     content: '';
     display: inline-block;
     visibility: visible;

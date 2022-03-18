@@ -24,7 +24,7 @@ body {
 }
 .icon path {
     fill: transparent;
-    stroke: green;
+    stroke: rgba(45, 62, 80);
     stroke-width: 1;
     stroke-dasharray: 450;
     stroke-dashoffset: 0;
@@ -34,18 +34,18 @@ body {
     position: absolute;
     bottom: 30px;
     margin: 0 20px;
-    color: green;
+    color: rgba(45, 62, 80);
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     text-align: center;
 }
 .font__link {
-    color:green;
+    color:rgba(45, 62, 80);
     text-decoration: none;
 }
 @keyframes reveal {
     0% {
-        fill: green;
+        fill: rgba(45, 62, 80);
         stroke-dashoffset: 0;
    }
     20% {
@@ -61,11 +61,11 @@ body {
         stroke-dashoffset: 900;
    }
     90% {
-        fill: green;
+        fill: rgba(45, 62, 80);
         stroke-dashoffset: 900;
    }
     100% {
-        fill: green;
+        fill: rgba(45, 62, 80);
         stroke-dashoffset: 900;
    }
 }
