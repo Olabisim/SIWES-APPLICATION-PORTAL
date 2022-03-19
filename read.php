@@ -103,7 +103,7 @@
                 <tr>
                     <!-- <th scope="row" > <?=$i?> </th> -->
                     <td>
-                        <a href="#main">
+                        <a href="view_student.php">
                             <?=$rows['name']?>
                         </a> 
                     </td>

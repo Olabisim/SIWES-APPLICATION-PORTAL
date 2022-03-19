@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Paytone+One&family=Poiret+One&display=swap');
+
+
+body {
+        font-family: 'Paytone One', sans-serif;
+        letter-spacing: 1px;
+        word-spacing:10px; 
+}
+header {
+        text-align: center;
+        font-family: 'Paytone One', sans-serif;
+        letter-spacing: 2px;
+}
+header h2 {
+        font-size: 40px;
+}
+h4 {
+        padding: 0;
+        margin: 0;
+}
+h5 {
+        padding: 0;
+        margin: 0;
+}
+
+.second_div {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+}
+
+.third_div {
+        
+    width: 80%;
+    /* text-align: center; */
+    margin: auto;
+    line-height: 2em;
+}
+
+.third_div h2 {
+        text-align: center;
+}
