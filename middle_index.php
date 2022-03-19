@@ -73,33 +73,33 @@
         <form action="php/create.php" method="post">
         
             <input type="text" 
-                    id="title"
-                    name="title"
-                    placeholder="Title" 
+                    id="name"
+                    name="name"
+                    placeholder="enter your full name" 
                     class="input" 
-                    value="<?php if(isset($_GET['title']))
-                                            echo($_GET['title']); ?>"
+                    value="<?php if(isset($_GET['name']))
+                                            echo($_GET['name']); ?>"
             />
 
             <input type="text" 
-                    id="description"
-                    name="description"
-                    placeholder="description" 
+                    id="matric_no"
+                    name="matric_no"
+                    placeholder="Your Matric Number" 
                     class="input" 
-                    value="<?php if(isset($_GET['description']))
-                                            echo($_GET['description']); ?>"
+                    value="<?php if(isset($_GET['matric_no']))
+                                            echo($_GET['matric_no']); ?>"
             />
 
             <input type="text" 
-                    id="payee"
-                    name="payee"
-                    placeholder="payee" 
+                    id="department"
+                    name="department"
+                    placeholder="Your Department" 
                     class="input" 
-                    value="<?php if(isset($_GET['payee']))
-                                            echo($_GET['payee']); ?>"
+                    value="<?php if(isset($_GET['department']))
+                                            echo($_GET['department']); ?>"
             />
 
-            <input type="text" 
+            <!-- <input type="text" 
                     id="payer"
                     name="payer"
                     placeholder="payer" 
@@ -128,29 +128,29 @@
                     margin: 0;"
                     value="<?php if(isset($_GET['amount']))
                                             echo($_GET['amount']); ?>"
-            />
+            /> -->
 
             <div>
-                <p style="color: #70757d;">Choose your payment option</p>
+                <p style="color: #70757d;">Choose your mode of entry</p>
 
                 <input class="checkbox-tools" 
                         type="radio" 
-                        name="transaction_type" 
+                        name="mode_of_entry" 
                         id="eclipse" 
                         value="1">
                 
                 <label for="eclipse">
-                Payment
+                DE
                 </label>
 
                 <input class="checkbox-tools" 
                         type="radio" 
-                        name="transaction_type" 
+                        name="mode_of_entry" 
                         id="square"
                         value="0">
 
                 <label for="square">
-                Purchase
+                JAMB
                 </label>
 
             </div>
@@ -172,14 +172,14 @@
 
     </div>
 
-    <div class="wrapper">
+    <!-- <div class="wrapper">
 
         <div class="arrow">
             <div class="arrow-body"></div>
             <div class="down-arrow-head"></div>
         </div> 
 
-    </div> 
+    </div>  -->
   
 </body>
 </html>

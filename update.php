@@ -65,36 +65,36 @@
         <form action="php/update.php" method="post">
         
 
-        <input type="text" 
+            <input type="text" 
                     name="id" 
                     value="<?=$row['id']?>"
                     hidden >
                     
             <input type="text" 
-                    id="title"
-                    name="title"
-                    placeholder="Title" 
+                    id="name"
+                    name="name"
+                    placeholder="name" 
                     class="input" 
-                    value="<?=$row['title'] ?>"
+                    value="<?=$row['name'] ?>"
             />
 
             <input type="text" 
-                    id="description"
-                    name="description"
-                    placeholder="description" 
+                    id="matric_no"
+                    name="matric_no"
+                    placeholder="matric_no" 
                     class="input" 
-                    value="<?=$row['description'] ?>"
+                    value="<?=$row['matric_no'] ?>"
             />
 
             <input type="text" 
-                    id="payee"
-                    name="payee"
-                    placeholder="payee" 
+                    id="department"
+                    name="department"
+                    placeholder="department" 
                     class="input" 
-                    value="<?=$row['payee'] ?>"
+                    value="<?=$row['department'] ?>"
             />
 
-            <input type="text" 
+            <!-- <input type="text" 
                     id="payer"
                     name="payer"
                     placeholder="payer" 
@@ -119,34 +119,34 @@
                     -webkit-appearance: none; 
                     margin: 0;"
                     value="<?=$row['amount'] ?>"
-            />
+            /> -->
 
 
             <div>
-                <p>Choose your payment option</p>
+                <p>Choose your mode of entry</p>
 
                    <input class="checkbox-tools" 
                         type="radio" 
-                        name="transaction_type" 
+                        name="mode_of_entry" 
                         id="eclipse" 
                         value="1"
-                        <?php if($row['transaction'] == 1) echo 'checked' ?>
+                        <?php if($row['mode_of_entry'] == 1) echo 'checked' ?>
                     />
 
                 <label for="eclipse">
-                    Payment
+                    DE
                 </label>
 
                 <input class="checkbox-tools" 
                         type="radio" 
-                        name="transaction_type" 
+                        name="mode_of_entry" 
                         id="square"
                         value="0"
-                        <?php if($row['transaction'] == 0) echo 'checked' ?>
+                        <?php if($row['mode_of_entry'] == 0) echo 'checked' ?>
                     />
 
                 <label for="square">
-                Purchase
+                    JAMB
                 </label>
 
             </div>

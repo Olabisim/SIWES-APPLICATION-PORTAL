@@ -80,12 +80,12 @@
         
         <thead>
             <tr>
-                <th scope="col">Title</th>
-                <th scope="col">description</th>
-                <th scope="col">Account_no.</th>
-                <th scope="col">payee</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">Matric no.</th>
+                <th scope="col">Department</th>
+                <!-- <th scope="col">payee</th>
                 <th scope="col">payer</th>
-                <th scope="col">amount</th>
+                <th scope="col">amount</th> -->
                 <th scope="col">transaction</th>
                 <th scope="col">update</th>
                 <th scope="col">delete</th>
@@ -102,22 +102,26 @@
             ?>
                 <tr>
                     <!-- <th scope="row" > <?=$i?> </th> -->
-                    <td><?=$rows['title']?></td>
-                    <td><?=$rows['description']?></td>
-                    <td><?=$rows['Account_Number']?></td>
-                    <td><?=$rows['payee']?></td>
+                    <td>
+                        <a href="#main">
+                            <?=$rows['name']?>
+                        </a> 
+                    </td>
+                    <td><?=$rows['matric_no']?></td>
+                    <td><?=$rows['department']?></td>
+                    <!-- <td><?=$rows['payee']?></td>
                     <td><?=$rows['payer']?></td>
-                    <td><?=$rows['amount']?></td>
+                    <td><?=$rows['amount']?></td> -->
                     <td>
                         <?php
                         
                         
-                            if($rows['transaction']){
+                            if($rows['mode_of_entry']){
 
-                                echo 'payment';
+                                echo 'DE';
 
                             } else {
-                                echo "purchase";
+                                echo "JAMB";
                             }
                         
                         ?>
