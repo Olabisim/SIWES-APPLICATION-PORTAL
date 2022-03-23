@@ -41,3 +41,10 @@ h5 {
 .third_div h2 {
         text-align: center;
 }
+
+.span_underline {
+        color: blue;
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+}

@@ -108,6 +108,15 @@
                                             echo($_GET['start_month']); ?>"
             />
 
+            <input type="text" 
+                    id="end_month"
+                    name="end_month"
+                    placeholder="month ending e.g. June" 
+                    class="input" 
+                    value="<?php if(isset($_GET['end_month']))
+                                            echo($_GET['end_month']); ?>"
+            />
+
             <!-- <input type="text" 
                     id="payer"
                     name="payer"
@@ -146,7 +155,7 @@
                         type="radio" 
                         name="mode_of_entry" 
                         id="eclipse" 
-                        value="1">
+                        value="1" />
                 
                 <label for="eclipse">
                 DE
@@ -155,12 +164,13 @@
                 <input class="checkbox-tools" 
                         type="radio" 
                         name="mode_of_entry" 
-                        id="square"
-                        value="0">
-
+                        id="square" 
+                        value="2" />
+                
                 <label for="square">
-                JAMB
+                DE
                 </label>
+
 
             </div>
 

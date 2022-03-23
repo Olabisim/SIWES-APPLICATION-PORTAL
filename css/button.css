@@ -5,7 +5,7 @@
     font-size: 1em;
     line-height: 1em;
     letter-spacing: 0.04em;
-    display: inline-block;
+    display: flex;
     
 }
 .btn--svg {
@@ -122,7 +122,14 @@ a {
     position: relative;
     text-decoration: none;
     color: red;
+    display: flex;
 }
+
+a.name_adjust:after {
+
+    background: white !important;
+}
+
 a:after {
     content: '';
     height: 1px;

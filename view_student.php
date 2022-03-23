@@ -1,3 +1,19 @@
+
+<?php include 'php/update.php'; ?>
+
+<?php 
+
+    session_start();
+    include_once 'db_conn.php';
+
+    
+    if(!$_SESSION['password']){
+        header("location: login.php");
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +27,7 @@
         <section>
                 <div>
                         <header>
+                               
                                 <h2>Lagos State University</h2>
                                 <h4>CENTRAL INDUSTRIAL LIAISON UNIT</h4>
                                 <h4>Vice - Chancellor's Office</h4>
@@ -31,8 +48,8 @@
                         to obtain relevant practical experience among others and is an important requirement for the award B.Sc/M.Sc/M.Cs Degree in certain courses.
                         </p>
                         <p>
-                        In pursuance of this, we wish to have our students attached to your industry this year between ----------- and --------- and hereby introduce to you ---------------- with 
-                        matriculation number ------------ and who is an undergraduate/postgraduate student of ----------------.
+                        In pursuance of this, we wish to have our students attached to your industry this year between <span class="span_underline"> <?=$row['start_month'] ?></span> and <span class="span_underline"> <?=$row['end_month'] ?></span> and hereby introduce to you <span class="span_underline"> <?=$row['name'] ?></span> with 
+                        matriculation number <span class="span_underline"> <?=$row['matric_no'] ?></span> and who is an undergraduate/postgraduate student of <span class="span_underline"> <?=$row['department'] ?></span>.
 
                         </p>
 

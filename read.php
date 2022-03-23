@@ -22,6 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="css/read.css?v=<?php echo time(); ?>">
     
@@ -50,7 +51,9 @@
       <!-- &lt; -->
     </span>LASU SIWES REPORT<span>
         <!-- &gt; -->
-    </span> <span class="yellow">Report</span></h1>
+    </span> 
+    <!-- <span class="yellow">Report</span> -->
+</h1>
 
   <?php if (isset($_GET['success'])) {?>
 
@@ -102,8 +105,8 @@
             ?>
                 <tr>
                     <!-- <th scope="row" > <?=$i?> </th> -->
-                    <td>
-                        <a href="view_student.php?id=<?=$rows['id']?>">
+                    <td >
+                        <a href="view_student.php?id=<?=$rows['id']?>" class="name_adjust">
                             <?=$rows['name']?>
                         </a> 
                     </td>
@@ -116,7 +119,7 @@
                         <?php
                         
                         
-                            if($rows['mode_of_entry']){
+                            if($rows['mode_of_entry'] == 1){
 
                                 echo 'DE';
 
@@ -129,12 +132,19 @@
                     </td>
                     <td>
                         <a href="update.php?id=<?=$rows['id']?>" 
-                        class="btn btn-success">Update</a>
+                        class="btn btn-success">
+                            <!-- Update -->
+                            <i class="material-icons">update</i>
+                        </a>
                       
                     </td>
                     <td>
                         <a href="php/delete.php?id=<?=$rows['id']?>" 
-                        class="btn btn-danger">Delete</a>
+                        class="btn btn-danger">
+                            <!-- Delete -->
+                            <i class="material-icons">delete</i>
+                        </a>
+                        
                     </td>
                 </tr>
             <?php } ?>
