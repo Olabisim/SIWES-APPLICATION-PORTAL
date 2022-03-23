@@ -86,7 +86,7 @@
                 <!-- <th scope="col">payee</th>
                 <th scope="col">payer</th>
                 <th scope="col">amount</th> -->
-                <th scope="col">transaction</th>
+                <th scope="col">mode of entry</th>
                 <th scope="col">update</th>
                 <th scope="col">delete</th>
             </tr>
@@ -103,7 +103,7 @@
                 <tr>
                     <!-- <th scope="row" > <?=$i?> </th> -->
                     <td>
-                        <a href="view_student.php">
+                        <a href="view_student.php?id=<?=$rows['id']?>">
                             <?=$rows['name']?>
                         </a> 
                     </td>

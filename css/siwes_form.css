@@ -27,6 +27,7 @@ h5 {
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
+        word-spacing: 5px;
 }
 
 .third_div {

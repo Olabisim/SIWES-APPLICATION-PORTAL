@@ -16,6 +16,7 @@ if (isset($_POST['create'])) {
     $name = validate($_POST['name']);
     $matric_no = validate($_POST['matric_no']);
     $department = validate($_POST['department']);
+    $start_month = validate($_POST['start_month']);
     // $payer = validate($_POST['payer']);
     // $amount = validate($_POST['amount']);
     // $account_number = validate($_POST['account_number']);
@@ -24,6 +25,7 @@ if (isset($_POST['create'])) {
     $user_data = 'name='.$name
                     .'&matric_no='.$matric_no
                     .'&department='.$department
+                    .'&start_month='.$start_month
                     .'&mode_of_entry='.$mode_of_entry;
                     // .'&payer='.$payer
                     // .'&amount='.$amount
@@ -36,6 +38,9 @@ if (isset($_POST['create'])) {
     }
     else if (empty($matric_no)) {
         header("Location: ../middle_index.php?error=matric_no  is required&$user_data"); 
+    }
+    else if (empty($start_month)) {
+        header("Location: ../middle_index.php?error=start_month  is required&$user_data"); 
     }
     else if (empty($department)) {
         header("Location: ../middle_index.php?error=department  is required&$user_data"); 
@@ -54,7 +59,7 @@ if (isset($_POST['create'])) {
     }
     else {
         
-        $sql = "INSERT INTO report(name, matric_no, department, mode_of_entry) VALUES('$name', '$matric_no', '$department', '$mode_of_entry')";
+        $sql = "INSERT INTO report(name, matric_no, start_month, department, mode_of_entry) VALUES('$name', '$matric_no', '$start_month', '$department', '$mode_of_entry')";
         // $sql = "INSERT INTO report(name, matric_no, department, payer, amount, Account_Number, transaction) VALUES('$name', '$matric_no', '$department', '$payer', '$amount',  '$account_number', '$mode_of_entry')";
 
         $result = mysqli_query($conn, $sql);

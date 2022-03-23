@@ -99,6 +99,15 @@
                                             echo($_GET['department']); ?>"
             />
 
+            <input type="text" 
+                    id="start_month"
+                    name="start_month"
+                    placeholder="month starting e.g. May" 
+                    class="input" 
+                    value="<?php if(isset($_GET['start_month']))
+                                            echo($_GET['start_month']); ?>"
+            />
+
             <!-- <input type="text" 
                     id="payer"
                     name="payer"
