@@ -168,7 +168,7 @@
                         value="2" />
                 
                 <label for="square">
-                DE
+                JAMB
                 </label>
 
 
@@ -191,14 +191,14 @@
 
     </div>
 
-    <!-- <div class="wrapper">
+    <div class="wrapper">
 
         <div class="arrow">
             <div class="arrow-body"></div>
             <div class="down-arrow-head"></div>
         </div> 
 
-    </div>  -->
+    </div> 
   
 </body>
 </html>

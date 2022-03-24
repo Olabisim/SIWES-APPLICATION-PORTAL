@@ -94,6 +94,22 @@
                     value="<?=$row['department'] ?>"
             />
 
+            <input type="text" 
+                    id="start_month"
+                    name="start_month"
+                    placeholder="start_month" 
+                    class="input" 
+                    value="<?=$row['start_month'] ?>"
+            />
+
+            <input type="text" 
+                    id="end_month"
+                    name="end_month"
+                    placeholder="end_month" 
+                    class="input" 
+                    value="<?=$row['end_month'] ?>"
+            />
+
             <!-- <input type="text" 
                     id="payer"
                     name="payer"
@@ -141,8 +157,8 @@
                         type="radio" 
                         name="mode_of_entry" 
                         id="square"
-                        value="0"
-                        <?php if($row['mode_of_entry'] == 0) echo 'checked' ?>
+                        value="2"
+                        <?php if($row['mode_of_entry'] == 2) echo 'checked' ?>
                     />
 
                 <label for="square">
