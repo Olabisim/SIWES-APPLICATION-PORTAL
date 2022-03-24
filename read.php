@@ -132,7 +132,7 @@
                     </td>
                     <td>
                         <a href="update.php?id=<?=$rows['id']?>" 
-                        class="btn btn-success">
+                        class="btn btn-success update">
                             <!-- Update -->
                             <i class="material-icons">update</i>
                         </a>

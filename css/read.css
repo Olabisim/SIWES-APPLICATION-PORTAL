@@ -151,3 +151,7 @@ img {
   color: white !important;
   text-transform: capitalize;
 }
+
+.update {
+  color: rgb(255, 204, 0);
+}

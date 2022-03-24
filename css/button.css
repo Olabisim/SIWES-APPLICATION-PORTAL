@@ -130,6 +130,11 @@ a.name_adjust:after {
     background: white !important;
 }
 
+a.update:after {
+
+    background: #ffcc00 !important;
+}
+
 a:after {
     content: '';
     height: 1px;
