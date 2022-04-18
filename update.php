@@ -95,6 +95,14 @@
             />
 
             <input type="text" 
+                    id="email"
+                    name="email"
+                    placeholder="email" 
+                    class="input" 
+                    value="<?=$row['email'] ?>"
+            />
+
+            <input type="text" 
                     id="start_month"
                     name="start_month"
                     placeholder="start_month" 

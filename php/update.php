@@ -40,6 +40,7 @@ if(isset($_GET['id'])) {
     $name = validate($_POST['name']);
     $matric_no = validate($_POST['matric_no']);
     $department = validate($_POST['department']);
+    $email = validate($_POST['email']);
     $start_month = validate($_POST['start_month']);
     $end_month = validate($_POST['end_month']);
     // $payer = validate($_POST['payer']);
@@ -51,6 +52,7 @@ if(isset($_GET['id'])) {
     $user_data = 'name='.$name
                     .'&matric_no='.$matric_no
                     .'&department='.$department
+                    .'&email='.$email
                     .'&start_month='.$start_month
                     .'&end_month='.$end_month
                     // .'&payer='.$payer
@@ -68,6 +70,9 @@ if(isset($_GET['id'])) {
     }
     else if (empty($department)) {
         header("Location: ../middle_index.php?error=department  is required&$user_data"); 
+    }
+    else if (empty($email)) {
+        header("Location: ../middle_index.php?error=email  is required&$user_data"); 
     }
     else if (empty($start_month)) {
         header("Location: ../middle_index.php?error=start_month  is required&$user_data"); 
@@ -91,7 +96,7 @@ if(isset($_GET['id'])) {
         
         $sql = "UPDATE report
                 -- SET name='$name', matric_no='$matric_no', department='$department', payer='$payer', amount='$amount', account_number='$account_number'
-                SET name='$name', matric_no='$matric_no', department='$department', start_month='$start_month', end_month='$end_month', mode_of_entry='$mode_of_entry'
+                SET name='$name', matric_no='$matric_no', department='$department', email='$email', start_month='$start_month', end_month='$end_month', mode_of_entry='$mode_of_entry'
                 WHERE id=$id";
 
         $result = mysqli_query($conn, $sql);
