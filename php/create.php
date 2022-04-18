@@ -18,6 +18,7 @@ if (isset($_POST['create'])) {
     $department = validate($_POST['department']);
     $start_month = validate($_POST['start_month']);
     $end_month = validate($_POST['end_month']);
+    $email = validate($_POST['email']);
     // $payer = validate($_POST['payer']);
     // $amount = validate($_POST['amount']);
     // $account_number = validate($_POST['account_number']);
@@ -28,7 +29,8 @@ if (isset($_POST['create'])) {
                     .'&department='.$department
                     .'&start_month='.$start_month
                     .'&end_month='.$end_month
-                    .'&mode_of_entry='.$mode_of_entry;
+                    .'&mode_of_entry='.$mode_of_entry
+                    .'&email='.$email;
                     // .'&payer='.$payer
                     // .'&amount='.$amount
                     // .'&account_number='.$account_number
@@ -50,6 +52,9 @@ if (isset($_POST['create'])) {
     else if (empty($department)) {
         header("Location: ../middle_index.php?error=department  is required&$user_data"); 
     }
+    else if (empty($email)) {
+        header("Location: ../middle_index.php?error=department  is required&$user_data"); 
+    }
     // else if (empty($payer)) {
     //     header("Location: ../middle_index.php?error=payer  is required&$user_data"); 
     // }
@@ -64,7 +69,7 @@ if (isset($_POST['create'])) {
     }
     else {
         
-        $sql = "INSERT INTO report(name, matric_no, start_month, end_month, department, mode_of_entry) VALUES('$name', '$matric_no', '$start_month', '$end_month', '$department', '$mode_of_entry')";
+        $sql = "INSERT INTO report(name, matric_no, start_month, end_month, department, mode_of_entry, email) VALUES('$name', '$matric_no', '$start_month', '$end_month', '$department', '$mode_of_entry', '$email')";
         // $sql = "INSERT INTO report(name, matric_no, department, payer, amount, Account_Number, transaction) VALUES('$name', '$matric_no', '$department', '$payer', '$amount',  '$account_number', '$mode_of_entry')";
 
         $result = mysqli_query($conn, $sql);

@@ -100,6 +100,15 @@
             />
 
             <input type="text" 
+                    id="email"
+                    name="email"
+                    placeholder="Your email" 
+                    class="input" 
+                    value="<?php if(isset($_GET['email']))
+                                            echo($_GET['email']); ?>"
+            />
+
+            <input type="text" 
                     id="start_month"
                     name="start_month"
                     placeholder="month starting e.g. May" 
