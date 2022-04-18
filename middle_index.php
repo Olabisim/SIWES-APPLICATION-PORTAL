@@ -1,14 +1,3 @@
-<?php 
-
-    session_start();
-    include_once 'db_conn.php';
-
-    
-    if(!$_SESSION['password']){
-        header("location: login.php");
-    }
-
-?>
 
 
 <!DOCTYPE html>

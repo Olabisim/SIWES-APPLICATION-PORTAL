@@ -90,6 +90,7 @@
                 <th scope="col">payer</th>
                 <th scope="col">amount</th> -->
                 <th scope="col">mode of entry</th>
+                <th scope="col">request</th>
                 <th scope="col">update</th>
                 <th scope="col">delete</th>
             </tr>
@@ -129,6 +130,14 @@
                         
                         ?>
                     
+                    </td>
+                    <td>
+                        <a href="update.php?id=<?=$rows['id']?>" 
+                        class="btn btn-success update">
+                            <!-- Update -->
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        </a>
+                      
                     </td>
                     <td>
                         <a href="update.php?id=<?=$rows['id']?>" 
