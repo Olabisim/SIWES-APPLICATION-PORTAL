@@ -75,7 +75,9 @@ if (isset($_POST['create'])) {
         $result = mysqli_query($conn, $sql);
 
         if($result) {
-            header("Location: ../read.php?success=successfully created");
+            header("Location: ../student_success.php? " . $name );
+            // header("Location: ../student_success.php?success=successfully name=" . $name . " created" );
+            // header("Location: ../read.php?success=successfully created");
         }
         else {
             header("Location: 
